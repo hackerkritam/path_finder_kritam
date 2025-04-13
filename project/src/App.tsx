@@ -209,7 +209,7 @@ function App() {
       state.speed
     );
 
-    // Visualiz 
+    // Visuali  
     for (const cell of path) {
       if (cell.type !== 'start' && cell.type !== 'end') {
         setState(prev => {
