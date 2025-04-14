@@ -209,7 +209,7 @@ function App() {
       state.speed
     );
 
-    // ssdfsfsdfsdfsdfsdf
+    // ssdfsfsdfsdfsdfsdfsdfsdf
     for (const cell of path) {
       if (cell.type !== 'start' && cell.type !== 'end') {
         setState(prev => {
