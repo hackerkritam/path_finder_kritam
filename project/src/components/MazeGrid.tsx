@@ -57,20 +57,9 @@ export function MazeGrid({ grid, cellSize, onCellClick }: MazeGridProps) {
       });
     });
   }, [grid, cellSize]);
-xatnt
-  const handleCanvasClick = (event: React.MouseEvent<HTMLCanvasElement>) => {
-    const canvas = canvasRef.current;
-    if (!canvas) return;
 
-    const rect = canvas.getBoundingClientRect();
-    const x = event.clientX - rect.left;
-    const y = event.clientY - rect.top;
 
-    const col = Math.floor(x / cellSize);
-    const row = Math.floor(y / cellSize);
-
-    onCellClick(row, col);
-  };
+ 
 
   return (
     <canvas
